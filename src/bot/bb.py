@@ -22,7 +22,7 @@ class BB(commands.Cog):
         new_content = ""
 
         for index, char in enumerate(message.content):
-            # we onlY want to change the first letter of a word if the word is not a single letter
+            # we only want to change the first letter of a word if the word is not a single letter
             # in length (example: "a", "I")
             if index == 0 or content[index - 1] == " " and content[index + 1] != " ":
                 new_content += "🅱️"
@@ -36,7 +36,7 @@ class BB(commands.Cog):
     async def b_to_emoji(
         self, interaction: disnake.MessageCommandInteraction, message: disnake.Message
     ):
-        """Replace the first letter of each word in target message with "B" emoji"""
+        """Replace only letter b with "B" emoji"""
 
         content = message.content
         new_content = ""
