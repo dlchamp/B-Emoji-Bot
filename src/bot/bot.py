@@ -1,7 +1,7 @@
 from datetime import datetime
 from sys import version
 
-from disnake import ApplicationCommandInteraction, Attachment, Game, Intents
+from disnake import Intents
 from disnake import __version__ as disnake_version
 from disnake.ext.commands import InteractionBot
 
