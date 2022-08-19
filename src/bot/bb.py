@@ -1,5 +1,3 @@
-from string import punctuation
-
 import disnake
 from disnake.ext import commands
 
